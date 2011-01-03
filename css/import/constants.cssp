@@ -1,0 +1,26 @@
+?border-box
+  box-sizing:border-box
+
+?border
+  border: 1px solid white
+  
+?margin-news
+  margin-bottom: 1px
+
+?margin-advert
+  margin-bottom: 5px
+  
+?ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  -o-text-overflow: ellipsis; // pour Opera 9
+
+?styleNumberhHeader
+  font-weight: bold
+  font-style: italic
+  margin-right: 5px
+@constants
+  colorRef: #0098DB
+  colorGrayRef: #8F8F8F
+  gradientBlueTitle: linear-gradient(left, #154A8E, #1A375F)
+  gradientGrayTitle: linear-gradient(top, #5F5F5F, #3D3D3D)

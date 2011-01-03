@@ -1,0 +1,218 @@
+@turbine
+  compress:0
+  plugins: css3, performance, legacy, load, fontface
+
+@load url($_FILEPATH/import/constants.cssp)
+
+body
+  background: url('/images/background/background_4x4.jpg')
+  color: white
+  overflow-x: hidden !important
+  overflow-y: visible !important
+  #gradient-top
+    background: linear-gradient(top, #fff, #4F4F4F)
+    width: 100%
+    box-shadow: 0px 0px 120px 10px #fff
+
+#header
+  #header-info
+    extends: "?border-box"
+    height: 120px
+    padding: 15px 5px 5px
+    #header-info-logo
+      background: url('/images/logo/logo_bleu.png')
+      width: 123px
+      height: 52px
+      float: left
+    #header-info-user
+      float: right
+      .fame-number
+        extends: "?styleNumberhHeader"
+        color: #FFE530
+        font-size: 1.2em
+        margin-top: -3px
+      .fame-logo
+        background: url('/images/logo/fame.png')
+        width: 12px
+        height: 20px
+        margin-right: 10px
+        margin-top: -3px
+      .vibe-number
+        extends: "?styleNumberhHeader"
+      .vibe-logo
+        background: url('/images/logo/vibes.png')
+        width: 22px
+        height: 23px
+        margin-right: 10px
+        margin-top: -3px
+      .bling-number
+        extends: "?styleNumberhHeader"
+      .bling-logo
+        background: url('/images/logo/bling.png')
+        width: 10px
+        height: 19px
+        margin-right: 10px
+      .mambapoints-bloc
+        width: 110px
+        height: 20px
+        overflow: hidden
+        .mambapoints-line
+          background: linear-gradient(top, #E5EDEF, #B7D0EE)
+          height: 6px
+          width: 90px
+          float: left
+          margin-top: 7px
+          border-radius: 4px 0 0 1px
+          .mambapoints-exp
+            height: 100%
+            width: 45%
+            border-radius: 4px 0 0 1px
+            background: linear-gradient(top, #FFA920, #FF831E)
+        .mambapoints-logo
+          background: url('/images/logo/mamba.png')
+          width: 20px
+          height: 20px
+          float: right
+          position: relative
+          z-index: 200
+          margin-top: -20px
+          top: 20px
+          left: -1px
+      .header-info-separator
+        color: $colorGrayRef
+  #header-menu
+    extends: "?border-box"
+    background: url('/images/background/background-menu_4x4.jpg')
+    height: 27px
+    .header-menu-link.first
+      margin-left: 15px
+    .header-menu-link
+      extends: "?border-box"
+      padding: 4px 20px 0px
+      font-size: 1.2em
+      text-transform: uppercase
+      font-weight: bold
+      height: 100%
+      background: #252525
+      color: white
+      text-decoration: none
+      float: left
+      margin-left: 5px
+    .header-menu-link:hover
+      background: $colorRef
+
+#under-header-news
+  #advert-header-news
+    extends: "?border-box"
+    height: 200px
+    margin-bottom: 20px
+    background: $gradientBlueTitle
+
+#content
+  #news-fil
+    #news-header
+      extends: "?border-box", "?margin-news"
+      text-transform: uppercase
+      height: 30px
+      padding: 5px
+      font-size: 1.3em
+      background: $gradientBlueTitle
+    .news-bloc
+      extends: "?border-box", "?margin-news"
+      height: 150px
+      background: #EEEEEE
+      .news-bloc-img
+        extends: "?border-box"
+        height: 100%
+        background: $gradientGrayTitle
+      .news-bloc-content
+        extends: "?border-box"
+        height: 100%
+        color: black
+        padding: 13px 0px 0px 0px
+        .news-bloc-title
+          extends: "?ellipsis"
+          text-transform: uppercase
+          font-weight: bold
+          color: $colorRef
+          float: left
+          font-size: 1.1em
+          width: 280px
+        .news-bloc-date
+          color: #8F8F8F
+          float: right
+        .news-bloc-text
+          extends: "?ellipsis"
+          text-align: justify
+          line-height: 100%
+          height: 110px
+      .news-bloc-more
+        extends: "?border-box"
+        height: 100%
+        padding: 120px 0 0 4px
+        .news-bloc-more-button
+          extends: "?border-box"
+          background: linear-gradient(top, #000000, #404040)
+          color: white
+          font-weight: bold
+          font-size: 1.1em
+          text-decoration: none
+          padding: 3px 10px
+          span
+            color: $colorRef
+            vertical-align: bottom
+            line-height: 100%
+            font-size: 1.6em
+
+#content-advert
+  .advert-bloc
+    extends: "?border-box", "?margin-advert"
+    margin
+    .advert-bloc-title
+      extends: "?border-box"
+      text-transform: uppercase
+      height: 30px
+      background: $gradientGrayTitle
+    .advert-bloc-content
+      extends: "?border-box", "?border", "?margin-news"
+      height: 150px
+      background: #EEEEEE
+      color: black
+  .advert-bloc-alone
+    extends: "#content-advert .advert-bloc"
+    .advert-bloc-alone-content
+      extends: "?border-box", "?border"
+      height: 300px
+      background: #EEEEEE
+      color: black
+      
+#footer
+  margin-top: 40px
+  #footer-content
+    extends: "?border-box"
+    text-align: center
+    height: 35px
+    margin-bottom: 10px
+    border-width: 1px 0
+    border-style: solid
+    border-color: #2F2F2F
+    padding: 8px 0 0
+    .footer-content-link
+      extends: "?border-box"
+      color: $colorGrayRef
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 0.84em
+      padding: 5px 8px
+    .footer-content-link:hover
+      text-shadow: 0px 0px 8px #fff
+    .footer-conter-separator
+      extends: "#footer #footer-content .footer-content-link"
+      padding: 0px
+  #footer-copyright
+    extends: "?border-box"
+    text-align: center
+    height: 35px
+    color: #4F4F4F
+    font-size: 0.83em
+    line-height: 110%
