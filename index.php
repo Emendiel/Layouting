@@ -11,10 +11,6 @@
     <link rel="stylesheet" href="/blueprint/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/turbine/css.php?files=/css/main.cssp">
     <!--[if lt IE 8]><link rel="stylesheet" href="../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
-    <style type="text/css" media="screen">
-      p, table, hr, .box { margin-bottom:25px; }
-      .box p { margin-bottom:10px; }
-    </style>
   </head>
   <body>
     <div id="gradient-top"></div>
@@ -77,11 +73,7 @@
                     leo ac commodo tincidunt, orci quam semper risus, vehicula iaculis dolor diam mollis libero. 
                     Curabitur eget orci id leo consequat faucibus auctor nec diam. Maecenas at mauris augue, sit amet mattis ligula. 
                     Fusce metus metus, consequat vel dictum fermentum, porttitor non nibh. Donec libero arcu, venenatis nec venenatis et, 
-                    laoreet sit amet est. Sed euismod velit eu eros ultrices porta. Nullam auctor vehicula nisi ac iaculis. Curabitur vel 
-                    magna tellus, sit amet ornare lorem. Cras libero ante, ullamcorper vel feugiat sed, vulputate sed risus. Fusce mattis 
-                    tellus ac massa faucibus iaculis. Etiam a ipsum in sapien bibendum accumsan. Mauris eu ipsum nulla. Mauris eget purus 
-                    libero, vitae faucibus arcu. Vestibulum aliquam, ipsum ut dictum condimentum, diam nibh semper ante, ac tincidunt neque 
-                    leo vitae diam. 
+                    laoreet sit amet est. Sed euismod velit eu eros ultrices porta.
                   </div>
                 </div>
                 <div class="news-bloc-more span-3 last">
