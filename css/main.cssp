@@ -1,6 +1,6 @@
 @turbine
   compress:0
-  plugins: css3, performance, legacy, load, fontface
+  plugins: css3, performance, legacy, load, fontface, sniffer
 
 @load url($_FILEPATH/import/constants.cssp)
 
@@ -9,8 +9,12 @@ body
   color: white
   overflow-x: hidden !important
   overflow-y: visible !important
+  #gradient-top-chrome
+    browser:chrome
+    width: 100%
+    box-shadow: 0px 0px 100px 13px gray;
   #gradient-top
-    background: linear-gradient(top, #fff, #4F4F4F)
+    browser:^chrome
     width: 100%
     box-shadow: 0px 0px 120px 10px #fff
 
@@ -31,6 +35,7 @@ body
         color: #FFE530
         font-size: 1.2em
         margin-top: -3px
+        text-shadow: $shadowHeader
       .fame-logo
         background: url('/images/logo/fame.png')
         width: 12px
@@ -127,9 +132,11 @@ body
       extends: "?border-box", "?margin-news"
       text-transform: uppercase
       height: 30px
-      padding: 5px
+      padding: 5px 0 0 15px
       font-size: 1.3em
       background: $gradientBlueTitle
+      span
+        font-weight: bold
     .news-bloc
       extends: "?border-box", "?margin-news"
       height: 150px
@@ -155,14 +162,14 @@ body
           color: #8F8F8F
           float: right
         .news-bloc-text
-          extends: "?ellipsis"
+          extends: "?ellipsis", "?border-box"
           text-align: justify
           line-height: 100%
           height: 110px
       .news-bloc-more
         extends: "?border-box"
         height: 100%
-        padding: 120px 0 0 4px
+        padding: 112px 0 0 4px
         .news-bloc-more-button
           extends: "?border-box"
           background: linear-gradient(top, #000000, #404040)
@@ -171,6 +178,8 @@ body
           font-size: 1.1em
           text-decoration: none
           padding: 3px 10px
+          width: 95px
+          cursor: pointer
           span
             color: $colorRef
             vertical-align: bottom
@@ -185,7 +194,11 @@ body
       extends: "?border-box"
       text-transform: uppercase
       height: 30px
+      padding: 5px 0 0 10px
+      font-size: 1.1em
       background: $gradientGrayTitle
+      span
+        font-weight: bold
     .advert-bloc-content
       extends: "?border-box", "?border", "?margin-news"
       height: 150px

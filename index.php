@@ -18,6 +18,7 @@
   </head>
   <body>
     <div id="gradient-top"></div>
+    <div id="gradient-top-chrome"></div>
     <div class="container">
       <div id="header">
         <div id="header-info" class="span-24">
@@ -34,7 +35,7 @@
               <span class="mambapoints-logo"></span>
             </div>
             <span class="header-info-separator left">|</span>
-            <a href="#" class="header-info-user-name left">User Lambda</a>
+            <a href="#" class="header-info-user-name header-info-user-name-ie left">User Lambda</a>
             <span class="header-info-separator left">|</span>
             <a href="#" class="header-info-user-logout left">Déconnexion</a>
           </div>
@@ -58,7 +59,7 @@
       <div id="content" class="span-16">
         <div id="news-fil" class="span-16 last">
           <div id="news-header" class="span-16 last">
-            Les news de la Mamba Nation
+            <span>Les news</span> de la Mamba Nation
           </div>
           <?php
             for($i=0; $i<5; $i++) {
@@ -84,7 +85,7 @@
                   </div>
                 </div>
                 <div class="news-bloc-more span-3 last">
-                  <a href="#" class="news-bloc-more-button">En savoir <span>+</span></a>
+                  <div class="news-bloc-more-button">En savoir <span>+</span></div>
                 </div>
               </div>
               <?php
@@ -99,7 +100,7 @@
             ?>
             <div class="advert-bloc span-8 last">
               <div class="advert-bloc-title span-8 last">
-                T'as plein de question ?
+                T'as plein de <span>question ?</span>
               </div>
               <div class="advert-bloc-content span-8 last">
                 Content <?php echo $j; ?>
