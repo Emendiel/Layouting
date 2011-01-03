@@ -80,6 +80,19 @@ body
           left: -1px
       .header-info-separator
         color: $colorGrayRef
+        margin: 0px 5px
+        font-size: 1.3em
+        line-height: 120%
+      a
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 0.82em
+        margin-top: 4px
+      a:hover
+        text-shadow: 0px 0px 8px #fff
+      .header-info-user-name
+        font-weight: bold
   #header-menu
     extends: "?border-box"
     background: url('/images/background/background-menu_4x4.jpg')
