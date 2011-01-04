@@ -95,3 +95,7 @@
 [Mon Jan 03 17:36:36 2011] [error] [client 10.101.0.103] File does not exist: /var/www/layouting/turbine/plugins/bugfixes/cleartypefix.htc
 [Mon Jan 03 17:36:51 2011] [error] [client 10.101.0.103] File does not exist: /var/www/layouting/turbine/plugins/bugfixes/cleartypefix.htc
 [Mon Jan 03 17:37:12 2011] [error] [client 10.101.0.103] File does not exist: /var/www/layouting/turbine/plugins/bugfixes/cleartypefix.htc
+[Tue Jan 04 09:41:43 2011] [error] [client 10.101.0.98] File does not exist: /var/www/layouting/turbine/plugins/bugfixes/cleartypefix.htc
+[Tue Jan 04 09:41:57 2011] [error] [client 10.101.0.98] File does not exist: /var/www/layouting/favicon.ico, referer: http://layouting.fr/
+[Tue Jan 04 09:42:01 2011] [error] [client 10.101.0.98] File does not exist: /var/www/layouting/favicon.ico
+[Tue Jan 04 09:53:32 2011] [error] [client 127.0.0.1] File does not exist: /var/www/layouting/favicon.ico

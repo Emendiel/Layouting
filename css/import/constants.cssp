@@ -2,7 +2,7 @@
   colorRef: #0098DB
   colorGrayRef: #8F8F8F
   gradientBlueTitle: linear-gradient(left, #154A8E, #1A375F)
-  gradientGrayTitle: linear-gradient(top, #5F5F5F, #3D3D3D)
+  gradientGrayTitle: linear-gradient(left, #2F2F2F, #5F5F5F)
   shadowHeader: 1px 1px 1px #000000
 
 ?border-box

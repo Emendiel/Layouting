@@ -18,15 +18,20 @@ body
     width: 100%
     box-shadow: 0px 0px 120px 10px #fff
 
+.background-opacity-line
+  background: url('/images/background/background-title-advert-4x4.png')
+  height: 100%
+  width: 100%
+
 #header
   #header-info
     extends: "?border-box"
     height: 120px
     padding: 15px 5px 5px
     #header-info-logo
-      background: url('/images/logo/logo_bleu.png')
-      width: 123px
-      height: 52px
+      background: url('/images/logo/header-logo-MN.png')
+      width: 160px
+      height: 65px
       float: left
     #header-info-user
       float: right
@@ -37,28 +42,29 @@ body
         margin-top: -3px
         text-shadow: $shadowHeader
       .fame-logo
-        background: url('/images/logo/fame.png')
-        width: 12px
-        height: 20px
+        background: url('/images/logo/logo-fame.png')
+        width: 13px
+        height: 17px
         margin-right: 10px
-        margin-top: -3px
+        margin-top: -1px
       .vibe-number
         extends: "?styleNumberhHeader"
       .vibe-logo
-        background: url('/images/logo/vibes.png')
-        width: 22px
-        height: 23px
+        background: url('/images/logo/logo-vibe.png')
+        width: 19px
+        height: 21px
         margin-right: 10px
         margin-top: -3px
       .bling-number
         extends: "?styleNumberhHeader"
       .bling-logo
-        background: url('/images/logo/bling.png')
-        width: 10px
-        height: 19px
+        background: url('/images/logo/logo-bling.png')
+        width: 15px
+        height: 22px
         margin-right: 10px
+        margin-top: -4px
       .mambapoints-bloc
-        width: 110px
+        width: 107px
         height: 20px
         overflow: hidden
         .mambapoints-line
@@ -74,14 +80,14 @@ body
             border-radius: 4px 0 0 1px
             background: linear-gradient(top, #FFA920, #FF831E)
         .mambapoints-logo
-          background: url('/images/logo/mamba.png')
-          width: 20px
-          height: 20px
+          background: url('/images/logo/logo-mamba.png')
+          width: 17px
+          height: 17px
           float: right
           position: relative
           z-index: 200
           margin-top: -20px
-          top: 20px
+          top: 22px
           left: -1px
       .header-info-separator
         color: $colorGrayRef
@@ -194,11 +200,13 @@ body
       extends: "?border-box"
       text-transform: uppercase
       height: 30px
-      padding: 5px 0 0 10px
       font-size: 1.1em
       background: $gradientGrayTitle
-      span
-        font-weight: bold
+      .background-opacity-line
+        extends: "?border-box"
+        padding: 5px 0 0 10px
+        span
+          font-weight: bold
     .advert-bloc-content
       extends: "?border-box", "?border", "?margin-news"
       height: 150px

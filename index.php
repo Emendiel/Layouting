@@ -92,7 +92,9 @@
             ?>
             <div class="advert-bloc span-8 last">
               <div class="advert-bloc-title span-8 last">
-                T'as plein de <span>question ?</span>
+                <div class="background-opacity-line">
+                  T'as plein de <span>question ?</span>
+                </div>
               </div>
               <div class="advert-bloc-content span-8 last">
                 Content <?php echo $j; ?>
