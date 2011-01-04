@@ -1,0 +1,30 @@
+#footer
+  margin-top: 40px
+  #footer-content
+    extends: "?border-box"
+    text-align: center
+    height: 35px
+    margin-bottom: 10px
+    border-width: 1px 0
+    border-style: solid
+    border-color: #2F2F2F
+    padding: 8px 0 0
+    .footer-content-link
+      extends: "?border-box"
+      color: $colorGrayRef
+      text-decoration: none
+      text-transform: uppercase
+      font-size: 0.84em
+      padding: 5px 8px
+    .footer-content-link:hover
+      text-shadow: 0px 0px 8px #fff
+    .footer-conter-separator
+      extends: "#footer #footer-content .footer-content-link"
+      padding: 0px
+  #footer-copyright
+    extends: "?border-box"
+    text-align: center
+    height: 35px
+    color: #4F4F4F
+    font-size: 0.83em
+    line-height: 110%

@@ -1,0 +1,27 @@
+#content-advert
+  .advert-bloc
+    extends: "?border-box", "?margin-advert"
+    margin
+    .advert-bloc-title
+      extends: "?border-box"
+      text-transform: uppercase
+      height: 30px
+      font-size: 1.1em
+      background: $gradientGrayTitle
+      .background-opacity-line
+        extends: "?border-box"
+        padding: 5px 0 0 10px
+        span
+          font-weight: bold
+    .advert-bloc-content
+      extends: "?border-box", "?border", "?margin-news"
+      height: 150px
+      background: #EEEEEE
+      color: black
+  .advert-bloc-alone
+    extends: "#content-advert .advert-bloc"
+    .advert-bloc-alone-content
+      extends: "?border-box", "?border"
+      height: 300px
+      background: #EEEEEE
+      color: black

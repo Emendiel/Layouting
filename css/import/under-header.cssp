@@ -1,0 +1,6 @@
+#under-header-news
+  #advert-header-news
+    extends: "?border-box"
+    height: 200px
+    margin-bottom: 20px
+    background: $gradientBlueTitle

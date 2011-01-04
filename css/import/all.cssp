@@ -1,0 +1,18 @@
+body
+  background: url('/images/background/background_4x4.jpg')
+  color: white
+  overflow-x: hidden !important
+  overflow-y: visible !important
+  #gradient-top-chrome
+    browser:chrome
+    width: 100%
+    box-shadow: 0px 0px 100px 13px gray;
+  #gradient-top
+    browser:^chrome
+    width: 100%
+    box-shadow: 0px 0px 120px 10px #fff
+
+.background-opacity-line
+  background: url('/images/background/background-title-advert-4x4.png')
+  height: 100%
+  width: 100%
