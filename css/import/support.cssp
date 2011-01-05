@@ -1,0 +1,3 @@
+#support-fil
+  #support-header
+    extends: "#news-fil #news-header"

@@ -10,6 +10,9 @@
 @load url($_FILEPATH/import/all.cssp)
 @load url($_FILEPATH/import/header.cssp)
 @load url($_FILEPATH/import/under-header.cssp)
-@load url($_FILEPATH/import/news.cssp)
 @load url($_FILEPATH/import/advert.cssp)
 @load url($_FILEPATH/import/footer.cssp)
+
+@load url($_FILEPATH/import/news.cssp)
+
+@load url($_FILEPATH/import/support.cssp)

@@ -53,7 +53,21 @@
       </div>
       
       <div id="content" class="span-16">
-        <?php include('news.php'); ?>
+        <?php
+        $file = 1;
+        
+        switch($file) {
+          case 0:
+            include('news.php'); 
+          break;
+          case 1:
+            include('support.php'); 
+          break;
+          default:
+            include('news.php'); 
+          break;
+        }
+        ?>
       </div>
       
       <div id="content-advert" class="span-8 last">
