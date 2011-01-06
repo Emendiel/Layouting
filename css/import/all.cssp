@@ -1,5 +1,5 @@
 body
-  background: url('/images/background/background_4x4.jpg')
+  background: url($imagesPath/background/background-4x4.jpg)
   color: white
   overflow-x: hidden !important
   overflow-y: visible !important
@@ -13,6 +13,21 @@ body
     box-shadow: 0px 0px 120px 10px #fff
 
 .background-opacity-line
-  background: url('/images/background/background-title-advert-4x4.png')
+  background: url($imagesPath/background/background-title-advert-4x4.png)
   height: 100%
   width: 100%
+  
+.arrow-lettrine
+  color: $colorRef
+  font-weight: bold
+  float: left
+  
+.button-black
+  extends: "?border-box"
+  background: linear-gradient(top, #000000, #404040)
+  color: white
+  font-weight: bold
+  font-size: 1.1em
+  text-decoration: none
+  padding: 3px 10px
+  cursor: pointer

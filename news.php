@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="news-bloc-more span-3 last">
-          <div class="news-bloc-more-button">En savoir <span>+</span></div>
+          <div class="button-black">En savoir <span>+</span></div>
         </div>
       </div>
       <?php

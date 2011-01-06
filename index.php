@@ -54,7 +54,7 @@
       
       <div id="content" class="span-16">
         <?php
-        $file = 1;
+        $file = 0;
         
         switch($file) {
           case 0:

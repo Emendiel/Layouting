@@ -4,7 +4,7 @@
     height: 120px
     padding: 15px 5px 5px
     #header-info-logo
-      background: url('/images/logo/header-logo-MN.png')
+      background: url($imagesPath/logo/header-logo-MN.png)
       width: 160px
       height: 65px
       float: left
@@ -17,7 +17,7 @@
         margin-top: -3px
         text-shadow: $shadowHeader
       .fame-logo
-        background: url('/images/logo/logo-fame.png')
+        background: url($imagesPath/logo/logo-fame.png)
         width: 13px
         height: 17px
         margin-right: 10px
@@ -25,7 +25,7 @@
       .vibe-number
         extends: "?styleNumberhHeader"
       .vibe-logo
-        background: url('/images/logo/logo-vibe.png')
+        background: url($imagesPath/logo/logo-vibe.png)
         width: 19px
         height: 21px
         margin-right: 10px
@@ -33,7 +33,7 @@
       .bling-number
         extends: "?styleNumberhHeader"
       .bling-logo
-        background: url('/images/logo/logo-bling.png')
+        background: url($imagesPath/logo/logo-bling.png)
         width: 15px
         height: 22px
         margin-right: 10px
@@ -55,7 +55,7 @@
             border-radius: 4px 0 0 1px
             background: linear-gradient(top, #FFA920, #FF831E)
         .mambapoints-logo
-          background: url('/images/logo/logo-mamba.png')
+          background: url($imagesPath/logo/logo-mamba.png)
           width: 17px
           height: 17px
           float: right
@@ -81,7 +81,7 @@
         font-weight: bold
   #header-menu
     extends: "?border-box"
-    background: url('/images/background/background-menu_4x4.jpg')
+    background: url($imagesPath/background/background-menu_4x4.jpg)
     height: 27px
     .header-menu-link.first
       margin-left: 15px

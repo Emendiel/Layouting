@@ -1,3 +1,40 @@
 #support-fil
   #support-header
     extends: "#news-fil #news-header"
+  .support-under-header
+    extends: "?border-box"
+    background: url($imagesPath/background/background-under-title-4x4.jpg)
+    height: 84px
+    padding: 21px 5px 5px 70px
+    font-size: 1.2em
+    line-height: 100%
+    text-transform: uppercase
+    span
+      font-weight: bold
+    .arrow-lettrine
+      font-size: 1.5em
+      margin-left: -15px
+      margin: -3px 0 0 -18px
+  .support-bloc
+    extends: "?border-box"
+    background: #EDEDED
+    color: black
+    font-size: 1.1em
+    line-height: 100%
+    padding: 25px 0 0 0
+    .arrow-lettrine
+      font-size: 1.3em
+      margin: -1px 10px 0 0
+      height: 15px
+    input, select, textarea
+      extends: "?border-box"
+      margin: 0
+      width: 100%
+    .support-select
+      border: 1px solid #BBBBBB
+    .support-textarea
+      height: 100px
+    .support-line
+      margin-bottom: 10px
+    .button-black
+      width: 150px

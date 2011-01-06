@@ -41,16 +41,8 @@
       extends: "?border-box"
       height: 100%
       padding: 112px 0 0 4px
-      .news-bloc-more-button
-        extends: "?border-box"
-        background: linear-gradient(top, #000000, #404040)
-        color: white
-        font-weight: bold
-        font-size: 1.1em
-        text-decoration: none
-        padding: 3px 10px
+      .button-black
         width: 95px
-        cursor: pointer
         span
           color: $colorRef
           vertical-align: bottom
